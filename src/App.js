@@ -1,24 +1,27 @@
 import './styles/app.css'
-
+import Header from './components/Header'
+import Main from './components/Main'
+import Footer from './components/Footer'
+import Contact from './components/Contactus'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Sanroom</h1>
-      </header>
+    <>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Main />} />
 
-      <nav>
-        <div>
-          <li>Home</li>
-          <li>Order</li>
-          <li>Catalog</li>
-          <li>Contact Us</li>
-          <li>About Us</li>
-        </div>
-        <div className='navBar'>
-        </div>
-      </nav>
-    </div>
+          <Route path='/contact' element={<Contact />} />
+          {/* 
+            <Route path="blogs" element={<Blogs />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="*" element={<NoPage />} /> */}
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+
+    </>
   );
 }
 
