@@ -102,4 +102,8 @@ color: #000000;
   background: #38BDF2;
 background-blend-mode: darken;
 border-radius: 37.5px;
+text-align: center;
+text-decoration: none;
+color:white;
+font-size: x-large;
 }
