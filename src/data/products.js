@@ -90,7 +90,7 @@ import Product4455 from '../resources/images/Products/sinks/product55.jpg'
 import Product4456 from '../resources/images/Products/sinks/product56.jpg'
 import Product4457 from '../resources/images/Products/sinks/product57.jpg'
 import Product4458 from '../resources/images/Products/sinks/product58.jpg'
-import Product4459 from '../resources/images/Products/sinks/product59.jpg'
+// import Product4459 from '../resources/images/Products/sinks/product59.jpg'
 
 
 
@@ -296,8 +296,8 @@ export const sinks = [
     { id: 4455, catagory: "Sinks", alt: "Sinks Images", path: Product4455, },
     { id: 4456, catagory: "Sinks", alt: "Sinks Images", path: Product4456, },
     { id: 4457, catagory: "Sinks", alt: "Sinks Images", path: Product4457, },
-    { id: 4458, catagory: "Sinks", alt: "Sinks Images", path: Product4458, },
-    { id: 4459, catagory: "Sinks", alt: "Sinks Images", path: Product4459, }
+    { id: 4458, catagory: "Sinks", alt: "Sinks Images", path: Product4458, }
+    // { id: 4459, catagory: "Sinks", alt: "Sinks Images", path: Product4459, }
 
 ];
 

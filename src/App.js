@@ -1,7 +1,6 @@
 import './styles/app.css'
 import Header from './components/Header'
 import Main from './components/Main'
-
 import Contact from './components/Contactus'
 import Products from './components/Catagory'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
