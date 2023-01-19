@@ -89,3 +89,31 @@ width: 80%;
 height: 100%;
 }
 
+@media screen and (max-width: 573px) {
+    .contactContainer, .Groups  {
+        flex-direction: column;
+       
+        
+    }
+
+    .details, #contactForm {
+        width: 100%; 
+        margin-bottom:20px;
+        
+    }
+
+
+    .Groups div {
+         margin-top:10px;
+        justify-content: space-evenly;
+       }
+
+       .Groups div input {
+        width: 100%;
+      }
+
+       .mapgl {
+           margin-top: unset;
+       }
+
+ }

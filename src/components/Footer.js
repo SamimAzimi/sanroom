@@ -12,9 +12,9 @@ function Footer() {
         <footer>
             <section className='contactDetailsFooter'>
                 <ul className='contactDetailsList'>
-                    <li className='contactDetailsListItems'><img src={ContactIcons} alt="footerIcons" className='footerIcons1Section' /><p className='phonenumber'>+937021090000223</p></li>
-                    <li className='contactDetailsListItems'><img src={Gmail} alt="footerIcons" className='footerIcons1Section' /><a className='mailto' href="mailto:sanroom@gmail.com">sanroom@gmail.com</a></li>
-                    <li className='contactDetailsListItems'><img src={LocationIcon} alt="footerIcons" className='footerIcons1Section' /><p className='address'>Almaty , UzbikstanAlmaty , UzbikstanAlmaty , Uzbikstan</p></li>
+                    <li className='contactDetailsListItems'><img src={ContactIcons} alt="footerIcons" className='footerIcons1Section' /><p className='phonenumber'>+77076472852</p></li>
+                    <li className='contactDetailsListItems'><img src={Gmail} alt="footerIcons" className='footerIcons1Section' /><a className='mailto' href="mailto:sanroom@gmail.com">sanroom.sales@gmail.com</a></li>
+                    <li className='contactDetailsListItems'><img src={LocationIcon} alt="footerIcons" className='footerIcons1Section' /><p className='address'>Çımkent, Kazakhstan</p></li>
                 </ul>
             </section>
 

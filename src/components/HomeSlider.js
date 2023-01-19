@@ -11,7 +11,7 @@ function HomeSlider() {
         arrows: true,
         variableWidth: true,
         centerMode: true,
-        centerPadding: "100px",
+        centerPadding: "50px",
         infinite: true,
         pauseOnHover: false,
         swipeToSlide: true,
@@ -26,7 +26,7 @@ function HomeSlider() {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 4,
                     slidesToScroll: 1,
                     infinite: true,
                     dots: true,
@@ -35,9 +35,11 @@ function HomeSlider() {
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 1,
+                    infinite: true,
+                    dots: true,
                 },
             },
             {
@@ -45,23 +47,26 @@ function HomeSlider() {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
                 },
             },
         ],
     };
     return (
+        <div className="sliderContainer">
 
-        <div className='imageSlider'>
-            <Slider {...settings}>
+<Slider {...settings}>
                 {homeSliderdata.map((slide, index) => {
                     return (
-                        <div className="imgslider" key={index}>
-                            <img src={slide.path} alt="carousel" />
+                        <div className="slide" key={index}>
+                            <img src={slide.path} alt="carousel" className="slideImage" />
                         </div>
                     );
                 })}
             </Slider>
-        </div>
+            </div>
+     
     )
 }
 

@@ -10,7 +10,7 @@ import { BsPerson } from 'react-icons/bs';
 import { GrSend } from 'react-icons/gr';
 
 
-import { toast } from "react-toastify";
+import { toast} from "react-toastify";
 import emailjs from "emailjs-com";
 
 // import ReactMapGL from "react-map-gl";
@@ -42,10 +42,10 @@ function Contactus() {
 
         emailjs
             .sendForm(
-                "service_iam5u89",
-                "template_d9pgrqc",
+                "service_tjp4n6r",
+                "template_wr1v8bo",
                 e.target,
-                "user_gVzTPBsJZ0J6JLX12Zgli"
+                "gu0oFF_4oTc9J0Pkh"
             )
             .then(
                 (result) => {
@@ -72,9 +72,9 @@ function Contactus() {
                 <div className='details'>
                     <div className='detailsList'>
                         <ul className='contactDetailsList'>
-                            <li className='contactDetailsListItems'><img src={ContactIcons} alt="footerIcons" className='footerIcons1Section' /><p className='phonenumber'>+937021090000223</p></li>
-                            <li className='contactDetailsListItems'><img src={Gmail} alt="footerIcons" className='footerIcons1Section' /><a className='mailto' href="mailto:sanroom@gmail.com">sanroom@gmail.com</a></li>
-                            <li className='contactDetailsListItems'><img src={LocationIcon} alt="footerIcons" className='footerIcons1Section' /><p className='address'>Almaty , UzbikstanAlmaty , UzbikstanAlmaty , Uzbikstan</p></li>
+                            <li className='contactDetailsListItems'><img src={ContactIcons} alt="footerIcons" className='footerIcons1Section' /><p className='phonenumber'>+7 707 647 2852</p></li>
+                            <li className='contactDetailsListItems'><img src={Gmail} alt="footerIcons" className='footerIcons1Section' /><a className='mailto' href="mailto:sanroom@gmail.com">sanroom.sales@gmail.com</a></li>
+                            <li className='contactDetailsListItems'><img src={LocationIcon} alt="footerIcons" className='footerIcons1Section' /><p className='address'>Chimkent, Kazakistan</p></li>
                         </ul>
                     </div>
                     <div className='socialMediaContactPage'>
@@ -119,12 +119,12 @@ function Contactus() {
                     style={{ "border": "0" }}
                     loading="lazy"
                     allowfullscreen
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC3BR4ik4mFhyhhDibPEReVOodWKB2rdGc&q=Kamiyab+Bakery,6001+14th+Ave+Markham+ON+L3S+0A2+Canada"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC3BR4ik4mFhyhhDibPEReVOodWKB2rdGc&q=Çımkent"
                 >
                 </iframe>
 
             </div>
-
+            
 
         </>
     )

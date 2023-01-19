@@ -16,28 +16,28 @@ function Catagory() {
         email: "",
         phone: "",
         itemID: "",
+     
     });
-
+ 
     const handleChange = (e) => {
         const name = e.target.name;
         const value = e.target.value;
         setInquiry({ ...inquiry, [name]: value });
     };
-    const handleSeemoreClicked = (e) => {
+    const handleInquiry = (e) => {
+
         e.preventDefault();
-
         if (!inquiry.name) return toast.info("Please Enter Your Name")
-        if (!inquiry.phone) return toast.info("Please Enter Your Email")
-        if (!inquiry.email) return toast.info("Please Enter a Passport")
-
+        if (!inquiry.phone) return toast.info("Please Enter Your Phone")
+        if (!inquiry.email) return toast.info("Please Enter Your Email")
 
 
         emailjs
             .sendForm(
-                "service_iam5u89",
-                "template_d9pgrqc",
+                "service_tjp4n6r",
+                "template_z4fj6ct",
                 e.target,
-                "user_gVzTPBsJZ0J6JLX12Zgli"
+                "gu0oFF_4oTc9J0Pkh"
             )
             .then(
                 (result) => {
@@ -101,7 +101,7 @@ function Catagory() {
                                 <div class="flip-card-back">
 
                                     <h6>Inquiry About this Item</h6>
-                                    <form className='inquiryForm'>
+                                    <form className='inquiryForm' onSubmit={handleInquiry}>
                                         <div className='qformgroup'>
 
                                             <label><BsPerson /></label>
@@ -114,11 +114,11 @@ function Catagory() {
                                         </div>
                                         <div className='qformgroup'>
                                             <label><MdOutlineMail /></label>
-                                            <input onChange={handleChange} type='email' value={inquiry.email} name="email" placeholder='Email Address' />
+                                            <input onChange={handleChange} type='text' value={inquiry.email} name="email" placeholder='Email Address' />
 
                                         </div>
-
-                                        <button type="button" className="inquiryBtn" onClick={() => handleSeemoreClicked(product.id)}>
+                                        <input type="text" value={product.id} name="itemID" onChange={handleChange} />
+                                        <button type="submit" className="inquiryBtn" >
                                             <GrSend /> Send
                                         </button>
                                     </form>
@@ -142,27 +142,27 @@ function Catagory() {
                                     <div class="flip-card-back">
 
                                         <h6>Inquiry About this Item</h6>
-                                        <form className='inquiryForm'>
-                                            <div className='qformgroup'>
+                                        <form className='inquiryForm' onSubmit={handleInquiry}>
+                                        <div className='qformgroup'>
 
-                                                <label><BsPerson /></label>
-                                                <input type='text' onChange={handleChange} value={inquiry.name} name="name" placeholder='Your Name' />
-                                            </div>
-                                            <div className='qformgroup'>
-                                                <label><BsPhone /></label>
-                                                <input onChange={handleChange} type='text' value={inquiry.phone} name="phone" placeholder='Cell Phone Number' />
+                                            <label><BsPerson /></label>
+                                            <input type='text' onChange={handleChange} value={inquiry.name} name="name" placeholder='Your Name' />
+                                        </div>
+                                        <div className='qformgroup'>
+                                            <label><BsPhone /></label>
+                                            <input onChange={handleChange} type='text' value={inquiry.phone} name="phone" placeholder='Cell Phone Number' />
 
-                                            </div>
-                                            <div className='qformgroup'>
-                                                <label><MdOutlineMail /></label>
-                                                <input onChange={handleChange} type='email' value={inquiry.email} name="email" placeholder='Email Address' />
+                                        </div>
+                                        <div className='qformgroup'>
+                                            <label><MdOutlineMail /></label>
+                                            <input onChange={handleChange} type='text' value={inquiry.email} name="email" placeholder='Email Address' />
 
-                                            </div>
-
-                                            <button type="button" className="inquiryBtn" onClick={() => handleSeemoreClicked(product.id)}>
-                                                <GrSend /> Send
-                                            </button>
-                                        </form>
+                                        </div>
+                                        <input type="text" value={product.id} name="itemID" onChange={handleChange} />
+                                        <button type="submit" className="inquiryBtn" >
+                                            <GrSend /> Send
+                                        </button>
+                                    </form>
 
                                     </div>
                                 </div>

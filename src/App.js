@@ -4,6 +4,7 @@ import Main from './components/Main'
 import Contact from './components/Contactus'
 import Products from './components/Catagory'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 function App() {
   return (
     <>
@@ -16,9 +17,9 @@ function App() {
           <Route path='/products' element={<Products />} />
 
         </Routes>
-
+      
       </BrowserRouter>
-
+      <ToastContainer />
     </>
   );
 }

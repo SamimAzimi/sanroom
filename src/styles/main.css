@@ -3,9 +3,9 @@
 .MainMessage {
   font-family: 'Playfair Display';
 font-style: normal;
-font-weight: 400;
-font-size: 131px;
-line-height: 175px;
+font-weight: 200;
+font-size: 150px;
+line-height: 150px;
 
 color: #000000;
 }
@@ -13,26 +13,36 @@ color: #000000;
 
 .isometericBg {
   box-sizing: border-box;
-
+display:none;
   position: relative;
   /* width: 390px;
   height: 515px;
   left: 950px;
-  top: 214px; */ 
+  top: 214px; */  
   
   background: #FFFFFF;
   border: 1px solid #FFFFFF;
   filter: blur(25px);
   border-radius: 70px;
 }
-
-
-.imageSlider {
-  width: 100%;
-  height: 80vh;
-  overflow: hidden;
-  border:1px solid black;
+.isometericImage {
+  width: 700px;
+  height:700px;
 }
+.sliderContainer {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  width: 100vw; 
+}
+.imageSlider {
+  width: 1024px;
+  height: 500px;
+  overflow: hidden;
+
+}
+
+
 .sectionHero {
   display: flex;
 }
@@ -107,3 +117,23 @@ text-decoration: none;
 color:white;
 font-size: x-large;
 }
+
+
+@media screen and (max-width: 573px) { 
+
+  .MainMessage {
+
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 50px;
+
+  }
+  .isometericImage {
+
+    width: 370px;
+    height:370px;
+  }
+
+
+
+ }
