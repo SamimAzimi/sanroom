@@ -10,7 +10,7 @@ import { BsPerson } from 'react-icons/bs';
 import { GrSend } from 'react-icons/gr';
 
 
-import { toast} from "react-toastify";
+import { toast } from "react-toastify";
 import emailjs from "emailjs-com";
 
 // import ReactMapGL from "react-map-gl";
@@ -72,9 +72,15 @@ function Contactus() {
                 <div className='details'>
                     <div className='detailsList'>
                         <ul className='contactDetailsList'>
-                            <li className='contactDetailsListItems'><img src={ContactIcons} alt="footerIcons" className='footerIcons1Section' /><p className='phonenumber'>+7 707 647 2852</p></li>
+                            <li className='contactDetailsListItems'><img src={ContactIcons} alt="footerIcons" className='footerIcons1Section' />
+
+                                <div className='phoneGroups'>
+                                    <p className='phonenumber'>+7 707 647 2852</p>
+                                    <p className='phonenumber'>+7 707 898 0363</p>
+                                </div>
+                            </li>
                             <li className='contactDetailsListItems'><img src={Gmail} alt="footerIcons" className='footerIcons1Section' /><a className='mailto' href="mailto:sanroom@gmail.com">sanroom.sales@gmail.com</a></li>
-                            <li className='contactDetailsListItems'><img src={LocationIcon} alt="footerIcons" className='footerIcons1Section' /><p className='address'>Chimkent, Kazakistan</p></li>
+                            <li className='contactDetailsListItems'><img src={LocationIcon} alt="footerIcons" className='footerIcons1Section' /><p className='address'>Almaty, Kazakistan</p></li>
                         </ul>
                     </div>
                     <div className='socialMediaContactPage'>
@@ -124,7 +130,7 @@ function Contactus() {
                 </iframe>
 
             </div>
-            
+
 
         </>
     )

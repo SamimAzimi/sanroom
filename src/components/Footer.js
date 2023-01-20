@@ -12,12 +12,16 @@ function Footer() {
         <footer>
             <section className='contactDetailsFooter'>
                 <ul className='contactDetailsList'>
-                    <li className='contactDetailsListItems'><img src={ContactIcons} alt="footerIcons" className='footerIcons1Section' /><p className='phonenumber'>+77076472852</p></li>
+                    <li className='contactDetailsListItems'><img src={ContactIcons} alt="footerIcons" className='footerIcons1Section' />
+                        <div className='phoneGroupsFooter'>
+                            <p className='phonenumber'>+7 707 647 2852</p>
+                            <p className='phonenumber'>+7 707 898 0363</p>
+                        </div>
+                    </li>
                     <li className='contactDetailsListItems'><img src={Gmail} alt="footerIcons" className='footerIcons1Section' /><a className='mailto' href="mailto:sanroom@gmail.com">sanroom.sales@gmail.com</a></li>
-                    <li className='contactDetailsListItems'><img src={LocationIcon} alt="footerIcons" className='footerIcons1Section' /><p className='address'>Çımkent, Kazakhstan</p></li>
+                    <li className='contactDetailsListItems'><img src={LocationIcon} alt="footerIcons" className='footerIcons1Section' /><p className='address'>Almaty, Kazakhstan</p></li>
                 </ul>
             </section>
-
             <section className='socialMediaIcons'>
                 <img src={Fb} alt="Facebook Icon" className="facebook" />
                 <img src={Yt} alt="Youtube Icon" className="youtube" />
@@ -26,7 +30,6 @@ function Footer() {
             <section className='logoFooter'>
                 <img src={SanroomLogo} alt="SANROOM Logo" />
             </section>
-
         </footer>
     )
 }
