@@ -19,7 +19,7 @@ function Footer() {
                         </div>
                     </li>
                     <li className='contactDetailsListItems'><img src={Gmail} alt="footerIcons" className='footerIcons1Section' /><a className='mailto' href="mailto:sanroom@gmail.com">sanroom.sales@gmail.com</a></li>
-                    <li className='contactDetailsListItems'><img src={LocationIcon} alt="footerIcons" className='footerIcons1Section' /><p className='address'>Almaty, Kazakhstan</p></li>
+                    <li className='contactDetailsListItems'><img src={LocationIcon} alt="footerIcons" className='footerIcons1Section' /><p className='address'>Aportmebel, Ырысты, Almaty, Kazakhstan</p></li>
                 </ul>
             </section>
             <section className='socialMediaIcons'>

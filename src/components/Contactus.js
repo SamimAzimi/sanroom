@@ -80,7 +80,7 @@ function Contactus() {
                                 </div>
                             </li>
                             <li className='contactDetailsListItems'><img src={Gmail} alt="footerIcons" className='footerIcons1Section' /><a className='mailto' href="mailto:sanroom@gmail.com">sanroom.sales@gmail.com</a></li>
-                            <li className='contactDetailsListItems'><img src={LocationIcon} alt="footerIcons" className='footerIcons1Section' /><p className='address'>Almaty, Kazakistan</p></li>
+                            <li className='contactDetailsListItems'><img src={LocationIcon} alt="footerIcons" className='footerIcons1Section' /><p className='address'>Aportmebel, Ырысты, Almaty, Kazakhstan</p></li>
                         </ul>
                     </div>
                     <div className='socialMediaContactPage'>
@@ -125,7 +125,7 @@ function Contactus() {
                     style={{ "border": "0" }}
                     loading="lazy"
                     allowfullscreen
-                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC3BR4ik4mFhyhhDibPEReVOodWKB2rdGc&q=Çımkent"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC3BR4ik4mFhyhhDibPEReVOodWKB2rdGc&q=Aportmebel, Ырысты, Almaty, Kazakhstan"
                 >
                 </iframe>
 
