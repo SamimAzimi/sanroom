@@ -1,23 +1,33 @@
+
+
 .productNavigation {
-    position: absolute;
-    right:12px;
-    top:190px;
-    width: 80%;
-    display: flex;
-    height: 70px;
-    justify-content: space-evenly;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  right:12px;
+  top:190px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.5);
 border: 1px solid #FFFFFF;
-box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
-backdrop-filter: blur(50px);
+-webkit-box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+      box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+-webkit-backdrop-filter: blur(50px);
+      backdrop-filter: blur(50px);
 /* Note: backdrop-filter has minimal browser support */
 
 border-radius: 84px;
 }
 
 .productNavigation li {
-    font-family: 'Josefin Slab';
+  font-family: 'Josefin Slab';
 font-style: normal;
 font-weight: 400;
 font-size: 40px;
@@ -30,120 +40,178 @@ color: #000000;
 }
 
 .catagoryContainers {
-    position:relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  position:relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 
 }
 
 .flip-card {
-    background-color: transparent;
-    width: 250px;
-    height: 250px;
-    perspective: 1000px;
-    font-family: "Courier New", Courier, monospace;
-   
-    background-color: #ffffff09;
-    backdrop-filter: blur(100px) saturate(120%) ;
-    -webkit-backdrop-filter: blur(140px) ;
-    border-radius: 12px;
-    border: 1px solid rgb(255, 255, 255);
-    margin: 25px;
-  }
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  font-family: "Courier New", Courier, monospace;
+ 
+  background-color: #ffffff09;
+  backdrop-filter: blur(100px) saturate(120%) ;
+  -webkit-backdrop-filter: blur(140px) ;
+  border-radius: 12px;
+  border: 1px solid rgb(255, 255, 255);
+  margin: 25px;
+}
 .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-  }
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-  }
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  -o-transition: transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  -o-transition: transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
 
 .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front,
-  .flip-card-back {
-    position: absolute;
-   
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+ 
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
 
 .flip-card-front {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flip-card-back {
   
-  .flip-card-back {
-    
-   
-    transform: rotateY(180deg);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
+ 
+  -webkit-transform: rotateY(180deg);
+  
+ 
+          transform: rotateY(180deg);
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
 
 .flip-card-image  {
-    background-origin: content-box;
-    width: 100%;
-    height: 95%;
-  }
+  background-origin: content-box;
+  width: 100%;
+  height: 95%;
+}
 
 .flip-card-image> img{
-    border-radius: 12px;
-    width: 90%;
-    height: 100%;
+  border-radius: 12px;
+  width: 90%;
+  height: 100%;
 }
 .inquiryForm {
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+
 }
 .inquiryBtn {
-    outline: none;
-    border:none;
-    border-radius: 12px;
-    height: 20%;
+  outline: none;
+  border:none;
+  border-radius: 12px;
+  height: 20%;
 }
 .qformgroup {
-   
-   
-    display: flex;
-    justify-content: space-between;
  
+ 
+  display: -webkit-box;
+ 
+ 
+  display: -ms-flexbox;
+ 
+ 
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
 }
 .inquiryBtn:hover {
-    border:1px solid blue;
+  border:1px solid blue;
 }
 
 
 @media screen and (max-width: 573px) { 
-  .productNavigation {
-    position: unset;
-    width: 100%;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-evenly;
-    align-items: center;
+.productNavigation {
+  position: unset;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 }

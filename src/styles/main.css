@@ -12,7 +12,8 @@ color: #000000;
 
 
 .isometericBg {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 display:none;
   position: relative;
   /* width: 390px;
@@ -22,7 +23,8 @@ display:none;
   
   background: #FFFFFF;
   border: 1px solid #FFFFFF;
-  filter: blur(25px);
+  -webkit-filter: blur(25px);
+          filter: blur(25px);
   border-radius: 70px;
 }
 .isometericImage {
@@ -30,9 +32,15 @@ display:none;
   height:700px;
 }
 .sliderContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; 
-  align-items: center; 
-  justify-content: center; 
+  -webkit-box-align: center; 
+      -ms-flex-align: center; 
+          align-items: center; 
+  -webkit-box-pack: center; 
+      -ms-flex-pack: center; 
+          justify-content: center; 
   width: 100vw; 
 }
 .imageSlider {
@@ -44,6 +52,8 @@ display:none;
 
 
 .sectionHero {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -51,10 +61,17 @@ display:none;
 .cardsContainer {
   width: 100%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
  
 }
 .cardsContainer {
@@ -65,14 +82,25 @@ display:none;
   margin-top:30px;
   width: 350px;
   height: 451px;
+  background: -o-linear-gradient(301.85deg, rgba(255, 255, 255, 0.7) 4.49%, rgba(255, 255, 255, 0.2) 95.5%);
   background: linear-gradient(148.15deg, rgba(255, 255, 255, 0.7) 4.49%, rgba(255, 255, 255, 0.2) 95.5%);
   background-blend-mode: overlay;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .circle, .circle1, .circle2, .circle3
 {
@@ -80,7 +108,8 @@ display:none;
   width: 494px;
   height: 494px;
   background: #50F4FF;
-  filter: blur(100px);
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
   z-index: -3;
 }
 

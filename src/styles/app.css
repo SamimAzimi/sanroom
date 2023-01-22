@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Playfair+Display&display=swap');
 
 :root {
@@ -9,14 +11,17 @@
 
 
 .linear {
+    background: -webkit-gradient(linear, right top, left top, from(#9FD4F4), color-stop(32.97%, #38B6FF), color-stop(63.95%, #38B7FE), to(#38B7FE));
+    background: -o-linear-gradient(right, #9FD4F4 0%, #38B6FF 32.97%, #38B7FE 63.95%, #38B7FE 100%);
     background: linear-gradient(270deg, #9FD4F4 0%, #38B6FF 32.97%, #38B7FE 63.95%, #38B7FE 100%);
-background-blend-mode: multiply;
+    background-blend-mode: multiply;
 }
 
 *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 html {font-size: 100%;} 
 .App {
@@ -30,6 +35,8 @@ body {
   font-family: 'ABeeZee', sans-serif;
   font-weight: 400;
   line-height: 1.75;
+
+  background: -o-linear-gradient(284.78deg, #FFFFFF 1.7%, #A0DBF2 21.93%, #CEF2EF 70.47%, #38BDF2 98.79%);
 
   background: linear-gradient(165.22deg, #FFFFFF 1.7%, #A0DBF2 21.93%, #CEF2EF 70.47%, #38BDF2 98.79%);
 background-blend-mode: darken;
